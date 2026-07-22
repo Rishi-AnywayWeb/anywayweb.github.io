@@ -1,0 +1,18 @@
+TRANSFORM WITH KASIA — Version 1 (single production landing page)
+Palette source: color-option-01 (cream / warm ink / blush-terracotta editorial palette)
+Fonts: Fraunces (display) + Work Sans (body), loaded from Google Fonts
+
+This is a single, self-contained landing page with no links out to other pages —
+safe to deploy as-is. Sections: hero, about + "is this for you", how it works,
+testimonial + closing call to action, footer.
+
+BEFORE LAUNCH:
+1. Replace G-XXXXXXXXXX with the real Google Analytics 4 Measurement ID (commented
+   block near the top of index.html <head>).
+2. All "Book a Free Call" buttons currently open an email (mailto:) — once Calendly
+   (or similar) is set up, replace those href values with the real booking link.
+3. Swap in the final logo whenever ready — the wordmark is plain text, so this is a
+   one-line change in index.html (search for "brand").
+4. When the About/Method/Blog/language pages exist, a top navigation and language
+   switcher can be reintroduced — intentionally left out of this first version so
+   there are no dead links.

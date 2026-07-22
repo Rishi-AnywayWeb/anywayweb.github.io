@@ -1,0 +1,357 @@
+/* ==========================================================================
+   Transform With Kasia — Version 3 (compact single landing page)
+   Palette source: color-option-03 "Earthy Harmony"
+   (pale sage / dusty sage / tan / deep green / warm cream)
+   Display font: Playfair Display  |  Body font: Montserrat
+   ========================================================================== */
+
+:root{
+  --cream:       #E7E4DE;
+  --pale-sage:   #CBDED3;
+  --pale-sage-2: #D9E6DF;
+  --dusty-sage:  #8BA49A;
+  --tan:         #D2C49E;
+  --tan-light:   #E3D8BC;
+  --deep-green:  #3B6255;
+  --ink:         #2E4D42;
+  --ink-soft:    #5B6E64;
+  --charcoal:    #33302B;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+*{ box-sizing: border-box; }
+
+body{
+  font-family: var(--font-body);
+  color: var(--charcoal);
+  background-color: var(--cream);
+  font-size: 0.98rem;
+  line-height: 1.7;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+a{ color: inherit; text-decoration: none; }
+img{ max-width: 100%; display: block; }
+.container{ max-width: 1140px; }
+
+/* ---------- Header ---------- */
+.site-header{
+  background-color: var(--cream);
+  padding: 1rem 0;
+}
+.header-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand{
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 0.03em;
+  color: var(--ink);
+}
+.btn-cta-outline{
+  border: 1px solid var(--deep-green);
+  color: var(--deep-green);
+  border-radius: 999px;
+  padding: 0.48rem 1.2rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  transition: background-color .15s ease, color .15s ease;
+}
+.btn-cta-outline:hover{ background-color: var(--deep-green); color: var(--cream); }
+
+/* ---------- Buttons / links ---------- */
+.btn-cta{
+  display: inline-block;
+  background-color: var(--deep-green);
+  color: var(--cream);
+  border-radius: 999px;
+  padding: 0.78rem 1.8rem;
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: background-color .15s ease;
+}
+.btn-cta:hover{ background-color: #2C4C41; color: var(--cream); }
+
+.btn-cta-light{
+  display: inline-block;
+  background-color: var(--tan);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 0.78rem 1.8rem;
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: background-color .15s ease;
+}
+.btn-cta-light:hover{ background-color: #E3D8BC; }
+
+.link-underline{
+  text-underline-offset: 4px;
+  text-decoration: underline;
+  text-decoration-color: var(--dusty-sage);
+  font-weight: 600;
+  font-size: 0.86rem;
+  color: var(--ink);
+}
+.link-light{ color: var(--cream); text-decoration-color: var(--tan); }
+
+.hero-actions{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.4rem;
+  margin-top: 1.5rem;
+}
+
+/* ---------- Typography ---------- */
+.eyebrow{
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--dusty-sage);
+  margin-bottom: 0.7rem;
+}
+.eyebrow-center{ text-align: center; }
+
+.display-headline{
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(2rem, 3.8vw, 2.9rem);
+  line-height: 1.16;
+  color: var(--ink);
+  margin-bottom: 0.9rem;
+}
+.display-headline em{
+  font-style: italic;
+  font-weight: 400;
+  color: var(--deep-green);
+}
+
+.reassurance{
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  color: var(--ink);
+  margin: 0.7rem 0 0;
+}
+.reassurance em{ font-style: italic; color: var(--deep-green); }
+
+.section-title{
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+  color: var(--ink);
+  margin-bottom: 0.9rem;
+  line-height: 1.28;
+}
+
+.lead-copy{
+  font-size: 1rem;
+  color: var(--ink-soft);
+  max-width: 28rem;
+  margin-bottom: 0;
+}
+
+.body-copy{
+  color: var(--ink-soft);
+  font-size: 0.94rem;
+  margin-bottom: 0.6rem;
+}
+
+/* ---------- Hero ---------- */
+.hero{ padding: 2.5rem 0 2rem; }
+
+.hero-panel-text{
+  background-color: var(--pale-sage);
+  border-radius: 24px 70px 24px 24px;
+  padding: 2.2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-photo-wrap{
+  position: relative;
+  height: 100%;
+  min-height: 280px;
+}
+.hero-photo-wrap::before{
+  content: "";
+  position: absolute;
+  top: 6%;
+  left: 8%;
+  width: 92%;
+  height: 92%;
+  background-color: var(--tan);
+  border-radius: 70px 24px 70px 24px;
+  z-index: 0;
+}
+.hero-photo{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+  border-radius: 70px 24px 70px 24px;
+  border: 5px solid var(--cream);
+}
+
+/* ---------- About + signs ---------- */
+.about{
+  background-color: var(--cream);
+  padding: 2.5rem 0;
+}
+.signs-card{
+  background-color: var(--pale-sage);
+  border-radius: 30px 90px 30px 30px;
+  padding: 2.2rem;
+}
+.avatar-wrap{
+  max-width: 180px;
+  margin: 0 auto;
+}
+.avatar-photo{
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--cream);
+  box-shadow: 0 16px 34px -14px rgba(46,77,66,0.35);
+}
+.signs-list{
+  list-style: none;
+  padding: 0;
+  margin: 0.4rem 0 0;
+}
+.signs-list li{
+  position: relative;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(59,98,85,0.15);
+}
+.signs-list li:last-child{ border-bottom: none; }
+.signs-list li::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background-color: var(--deep-green);
+}
+
+/* ---------- Method ---------- */
+.method{
+  background-color: var(--pale-sage-2);
+  padding: 2.5rem 0;
+}
+.method-row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.method-step{
+  flex: 1 1 200px;
+  max-width: 240px;
+  text-align: center;
+}
+.step-num{
+  display: block;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.3rem;
+  color: var(--deep-green);
+  margin-bottom: 0.4rem;
+}
+.step-title{
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.02rem;
+  color: var(--ink);
+  margin-bottom: 0.3rem;
+}
+.step-copy{
+  color: var(--ink-soft);
+  font-size: 0.84rem;
+}
+
+/* ---------- Testimonial + Final CTA ---------- */
+.final-cta{
+  background-color: var(--deep-green);
+  padding: 3rem 0;
+}
+.quote{
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.15rem, 1.9vw, 1.4rem);
+  color: var(--cream);
+  line-height: 1.45;
+  max-width: 34rem;
+  margin: 0 auto 0.6rem;
+}
+.quote-attr{
+  color: #B9D2C7;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.cta-title{ color: var(--cream); }
+.cta-copy{
+  color: #C9DCD3;
+  max-width: 30rem;
+  margin: 0 auto 0.5rem;
+  font-size: 0.92rem;
+}
+.final-cta .hero-actions{ margin-top: 1.4rem; }
+
+/* ---------- Footer ---------- */
+.site-footer{
+  background-color: var(--cream);
+  color: var(--ink-soft);
+  padding: 1.1rem 0;
+  border-top: 1px solid rgba(59,98,85,0.15);
+}
+.footer-inner{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+}
+.brand-footer{
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--ink);
+}
+.footer-copy{ font-size: 0.8rem; color: var(--ink-soft); }
+.footer-copy a{ color: var(--ink); text-decoration: underline; text-decoration-color: var(--dusty-sage); }
+.footer-fine{ font-size: 0.76rem; color: var(--dusty-sage); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 991.98px){
+  .hero-panel-text{ padding: 1.8rem; border-radius: 20px; }
+  .hero-photo-wrap{ min-height: 240px; }
+  .hero-photo{ min-height: 240px; border-radius: 20px; }
+  .hero-photo-wrap::before{ border-radius: 20px; }
+  .signs-card{ padding: 1.8rem; border-radius: 20px; }
+  .about, .method{ padding: 2rem 0; }
+  .final-cta{ padding: 2.25rem 0; }
+  .footer-inner{ flex-direction: column; text-align: center; }
+}
