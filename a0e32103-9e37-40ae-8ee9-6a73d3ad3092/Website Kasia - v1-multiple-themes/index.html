@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Transform With Kasia</title>
+<meta http-equiv="refresh" content="0; url=en/index.html">
+<script>
+(function(){
+  var supported = ['en','nl','pl'];
+  var browserLang = (navigator.language || navigator.userLanguage || 'en').slice(0,2).toLowerCase();
+  var lang = supported.indexOf(browserLang) !== -1 ? browserLang : 'en';
+  window.location.replace(lang + '/index.html');
+})();
+</script>
+</head>
+<body>
+<p>Redirecting to <a href="en/index.html">Transform With Kasia</a>&hellip;</p>
+</body>
+</html>

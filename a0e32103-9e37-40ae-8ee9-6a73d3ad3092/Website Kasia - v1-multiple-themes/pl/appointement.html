@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zarezerwuj Wizytę | Transform With Kasia</title>
+<meta name="description" content="Delikatna, indywidualna ścieżka coachingu online dla osób odzyskujących się po narcystycznej przemocy z Kasią — w tempie, które respektuje to, gdzie teraz jesteś.">
+<meta property="og:title" content="Zarezerwuj Wizytę | Transform With Kasia">
+<meta property="og:description" content="Delikatna, indywidualna ścieżka coachingu online dla osób odzyskujących się po narcystycznej przemocy z Kasią — w tempie, które respektuje to, gdzie teraz jesteś.">
+<meta property="og:type" content="website">
+<link rel="alternate" hreflang="en" href="https://example.com/en/appointement.html">
+<link rel="alternate" hreflang="nl" href="https://example.com/nl/appointement.html">
+<link rel="alternate" hreflang="pl" href="https://example.com/pl/appointement.html">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link id="themeStylesheet" href="../assets/css/theme01.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="theme-toggle" role="group" aria-label="Theme preview">
+  <button type="button" class="theme-toggle-btn active" data-theme="theme01">Paleta kolorów 1</button>
+  <button type="button" class="theme-toggle-btn" data-theme="theme02">Paleta kolorów 2</button>
+</div>
+
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg header-inner container">
+    <a class="brand" href="index.html">Transform With Kasia</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Start</a></li>
+        <li><a href="about-me.html" class="nav-link">O mnie</a></li>
+        <li><a href="about-method.html" class="nav-link">O metodzie</a></li>
+        <li><a href="about-narcisists.html" class="nav-link">O narcyzach</a></li>
+        <li><a href="testimonials.html" class="nav-link">Opinie</a></li>
+        <li><a href="blogs.html" class="nav-link">Blog</a></li>
+        <li><a href="appointement.html" class="nav-link active">Zarezerwuj wizytę</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="../en/appointement.html">EN</a>
+        <a href="../nl/appointement.html">NL</a>
+        <a href="../pl/appointement.html" class="active">PL</a>
+      </div>
+      <a href="appointement.html" class="btn btn-cta-outline">Zarezerwuj bezpłatną rozmowę</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="contact-page">
+    <div class="container">
+      <div class="contact-card">
+        <p class="eyebrow">Skontaktuj Się</p>
+        <h1 class="section-title">Kiedy będziesz gotowa.</h1>
+        <p class="body-copy">Żadnej presji, żadnych zobowiązań — tylko krótka, szczera rozmowa, by sprawdzić, czy to dobre rozwiązanie dla Ciebie.</p>
+        <div class="hero-actions justify-content-center">
+          <a href="mailto:transformwithkasia@gmail.com" class="btn btn-cta">Zarezerwuj bezpłatną rozmowę</a>
+          <a href="mailto:transformwithkasia@gmail.com" class="link-underline">transformwithkasia@gmail.com</a>
+        </div>
+      </div>
+
+      <form class="appointment-form" id="appointmentForm">
+        <div class="form-grid-2">
+          <div class="form-row">
+            <label for="firstName">Imię</label>
+            <input type="text" id="firstName" name="firstName" required>
+          </div>
+          <div class="form-row">
+            <label for="lastName">Nazwisko</label>
+            <input type="text" id="lastName" name="lastName" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="email">Adres e-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="phone">Numer telefonu</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-grid-2">
+          <div class="form-row">
+            <label for="apptDate">Preferowana Data</label>
+            <input type="date" id="apptDate" name="apptDate" required>
+          </div>
+          <div class="form-row">
+            <label for="apptTime">Preferowana Godzina</label>
+            <select id="apptTime" name="apptTime" required>
+              <option value="" disabled selected>Wybierz godzinę</option>
+              <option value="09:00">09:00</option>
+              <option value="10:00">10:00</option>
+              <option value="11:00">11:00</option>
+              <option value="12:00">12:00</option>
+              <option value="13:00">13:00</option>
+              <option value="14:00">14:00</option>
+              <option value="15:00">15:00</option>
+              <option value="16:00">16:00</option>
+            </select>
+          </div>
+        </div>
+        <p class="form-hint">Tylko dni robocze (poniedziałek–piątek). Godziny pracy: 09:00–17:00.</p>
+        <div class="form-row">
+          <label for="notes">Wiadomość / Uwagi (opcjonalnie)</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Wszystko, co chcesz przekazać Kasi z wyprzedzeniem."></textarea>
+        </div>
+        <button type="submit" class="btn btn-cta" style="width:100%; text-align:center;">Wyślij</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span class="brand-footer">Transform With Kasia</span>
+    <span class="footer-copy">Sesje online, na całym świecie &middot; <a href="mailto:transformwithkasia@gmail.com">transformwithkasia@gmail.com</a></span>
+    <span class="footer-fine">© 2026 Transform With Kasia</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+(function(){
+  var dateInput = document.getElementById('apptDate');
+  if (!dateInput) return;
+  var today = new Date();
+  dateInput.min = today.toISOString().split('T')[0];
+  dateInput.addEventListener('input', function(){
+    if (!dateInput.value) return;
+    var d = new Date(dateInput.value + 'T00:00:00');
+    var day = d.getDay();
+    if (day === 0 || day === 6) {
+      dateInput.setCustomValidity('Please choose a weekday (Monday–Friday).');
+      dateInput.reportValidity();
+    } else {
+      dateInput.setCustomValidity('');
+    }
+  });
+  document.getElementById('appointmentForm').addEventListener('submit', function(e){
+    e.preventDefault();
+  });
+})();
+</script>
+<script src="../assets/js/theme-toggle.js"></script>
+</body>
+</html>
