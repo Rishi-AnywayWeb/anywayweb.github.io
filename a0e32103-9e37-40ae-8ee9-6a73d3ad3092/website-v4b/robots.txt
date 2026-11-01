@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /uploads/
+Disallow: /_ds/
+
+Sitemap: https://www.kasiamaciejowska.eu/sitemap.xml

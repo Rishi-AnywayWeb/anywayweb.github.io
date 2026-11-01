@@ -1,0 +1,2 @@
+# Library only used by contact-send.php; never served directly.
+Require all denied
