@@ -586,3 +586,4 @@ body.menu-open{ overflow:hidden; }
 }
 @media (max-width: 991.98px){ .navbar > .brand, .navbar > .navbar-toggler{ position:relative; z-index:1600; } }
 @media (max-width: 480px){ .btn.btn-call{ white-space:normal; text-align:center; } }
+.photo-row.photo-single{ grid-template-columns:minmax(0,1fr); }
